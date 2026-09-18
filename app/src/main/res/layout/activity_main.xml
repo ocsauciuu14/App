@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/IdStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masv" />
+
+        <EditText
+            android:id="@+id/EditId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mã sinh viên"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/TenStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ten" />
+
+        <EditText
+            android:id="@+id/EditTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/AgeStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Tuoi" />
+
+        <EditText
+            android:id="@+id/EditTuoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tuổi"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/GpaStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Gpa" />
+
+        <EditText
+            android:id="@+id/EditGpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập GPA"
+            android:inputType="numberDecimal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ThemStudent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Thêm" />
+
+            <Button
+                android:id="@+id/XoaStudent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Xóa" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/TableStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:stretchColumns="*">
+
+            <!-- Hàng tiêu đề cố định -->
+            <TableRow
+                android:background="#D3D3D3"
+                android:padding="8dp">
+
+                <TextView android:text="Mã SV" android:textStyle="bold" />
+                <TextView android:text="Tên" android:textStyle="bold" />
+                <TextView android:text="Tuổi" android:textStyle="bold" />
+                <TextView android:text="GPA" android:textStyle="bold" />
+                <TextView android:text="Xếp loại" android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
